@@ -4,10 +4,12 @@ public class AfishaManager {
 
     private String[] movies = new String[0];
     private int limit;
+
     public AfishaManager() {
         this.limit = 10;
 
     }
+
     public AfishaManager(int limit) {
         this.limit = limit;
     }
@@ -34,10 +36,13 @@ public class AfishaManager {
         } else {
             answerLength = limit;
         }
-        String[] answer = new String[10];
-        for (int i = 0; i < answer.length; i++) {
-            answer[i] = movies[movies.length - 1 - i];
+
+            String[] answer = new String[answerLength];
+            for (int i = 0; i < answer.length; i++) {
+                answer[i] = movies[movies.length - 1 - i];
+            }
+            return answer;
         }
-        return answer;
     }
-}
+
+
