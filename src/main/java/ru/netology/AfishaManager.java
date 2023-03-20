@@ -7,7 +7,6 @@ public class AfishaManager {
 
     public AfishaManager() {
         this.limit = 10;
-
     }
 
     public AfishaManager(int limit) {
@@ -37,12 +36,12 @@ public class AfishaManager {
             answerLength = limit;
         }
 
-            String[] answer = new String[answerLength];
-            for (int i = 0; i < answer.length; i++) {
-                answer[i] = movies[movies.length - 1 - i];
-            }
-            return answer;
+        String[] answer = new String[answerLength];
+        for (int i = 0; i < answer.length; i++) {
+            answer[i] = movies[movies.length - 1 - i];
         }
+        return answer;
     }
+}
 
 
