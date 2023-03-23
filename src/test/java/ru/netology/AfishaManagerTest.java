@@ -79,6 +79,7 @@ public class AfishaManagerTest {
         manager.add("Film eleventh");
         String[] expected = {"Film eleventh", "Film tenth", "Film  ninth", "Film eighth", "Film seventh",
                 "Film sixth", "Film fifth", "Film fourth", "Film third", "Film second"};
+
         String[] actual = manager.findLastMovie();
         Assertions.assertArrayEquals(expected, actual);
     }
